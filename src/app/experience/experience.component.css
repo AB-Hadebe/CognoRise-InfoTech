@@ -1,0 +1,38 @@
+.section {
+  padding: 100px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.section-list li::before {
+  content: "•";
+  color: #c9588d;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.section-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.section-list li:hover {
+  color: #c9588d;
+}

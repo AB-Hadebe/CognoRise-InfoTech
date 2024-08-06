@@ -1,0 +1,30 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 p-flex p-flex-align-center p-flex-jc-sb">
+                <img src="/assets/images/a.jpg" alt="Logo" class="logo">
+                <h1 class="title">Ayanda Hadebe's Profile</h1>
+                <div class="menu-icon" (click)="toggleMenu()">
+                    <div [class.change]="menuOpen" class="bar1"></div>
+                    <div [class.change]="menuOpen" class="bar2"></div>
+                    <div [class.change]="menuOpen" class="bar3"></div>
+                </div>
+                <nav [class.open]="menuOpen">
+                    <ul>
+                        <li><a href="#home" class="nav-link" (click)="toggleMenu()">Home</a></li>
+                        <li><a href="#about-me" class="nav-link" (click)="toggleMenu()">About me</a></li>
+                        <li><a href="#background" class="nav-link" (click)="toggleMenu()">Background</a></li>
+                        <li><a href="#skills" class="nav-link" (click)="toggleMenu()">Skills</a></li>
+                        <li><a href="#experience" class="nav-link" (click)="toggleMenu()">Experience</a></li>
+                        <li><a href="#contacts" class="nav-link" (click)="toggleMenu()">Contacts</a></li>
+                        <li class="download-cv">
+                            <a href="assets/Hadebe AB-CV.pdf" download="Hadebe AB-CV.pdf" class="btn btn-primary">
+                                <i class="fa fa-download"></i> Download CV
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
